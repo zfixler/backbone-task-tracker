@@ -1,0 +1,8 @@
+<div class="task-item">
+    <input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}/><span class="expand">{{ title }}</span><button class="delete"></button>
+</div>
+<div class="edit-wrapper">
+    <input id="title-edit" type="text" value="{{ title }}">
+    <textarea id="comments-edit" cols="30" rows="3" placeholder="Enter comments...">{{ comments }}</textarea>
+    <button id="save-edit">Update</button>
+</div>
